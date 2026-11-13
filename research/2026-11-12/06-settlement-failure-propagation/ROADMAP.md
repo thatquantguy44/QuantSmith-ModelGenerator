@@ -1,0 +1,6 @@
+# ROADMAP — Collateral Settlement Failure Propagation
+**Week 1–2: Feasibility.** Validate source access for Dependency-linked settlement legs, legal routes, timestamps, collateral and failed instructions; confirm target the settlement legs whose failure causes the most downstream loss, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `FIFO escalation by individual settlement` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `directed graph contagion replay`; consider `stochastic hypergraph scheduling and recovery routing` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `cascade size, failed notional, recovery time and funding cost`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or incomplete external dependencies and cross-entity visibility.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

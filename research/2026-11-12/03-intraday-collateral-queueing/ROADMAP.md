@@ -1,0 +1,6 @@
+# ROADMAP — Intraday Collateral Liquidity Forecasting via Queueing Theory
+**Week 1–2: Feasibility.** Validate source access for Intraday margin calls, settlement timestamps, queue lengths, cash/collateral buffers, fails; confirm size buffer and prioritize arriving collateral obligations, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `fixed intraday liquidity reserve` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `stochastic queueing and priority model`; consider `model predictive control with chance-constrained service levels` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `liquidity buffer cost, p99 delay, shortfalls and failures`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or timestamp quality and hidden queue-priority rules.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.
