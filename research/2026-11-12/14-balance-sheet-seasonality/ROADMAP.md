@@ -1,0 +1,6 @@
+# ROADMAP — Balance-Sheet Seasonality Arbitrage
+**Week 1–2: Feasibility.** Validate source access for Repo spread term structure, settlement calendar, quarter-end dates, financing usage; confirm choose funding tenor and capacity reserves around reporting dates, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `constant overnight-roll financing` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `calendar event study with capacity-aware optimization`; consider `stochastic dynamic capacity control under regime variation` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `holdout funding cost, stress liquidity, rollover risk and drawdown`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or well-known quarter-end effects may already be fully priced.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

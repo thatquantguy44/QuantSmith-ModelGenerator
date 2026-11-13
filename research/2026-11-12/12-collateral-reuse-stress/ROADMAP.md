@@ -1,0 +1,6 @@
+# ROADMAP — Collateral Reuse Chain Stress Testing
+**Week 1–2: Feasibility.** Validate source access for Source provenance, permissioned reuse contracts, collateral movements, haircut and margin events; confirm set buffers and resilience policies for eligible collateral transformation chains, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `gross collateral stock and static stress` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `legal reuse network input-output simulation`; consider `dynamic network cascades with haircuts and intraday liquidity` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `capacity contraction, margin calls, recovery time and chain failure`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or double counting and unsupported rehypothecation rights.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

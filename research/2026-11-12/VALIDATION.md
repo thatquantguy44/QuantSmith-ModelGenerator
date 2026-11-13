@@ -1,0 +1,2 @@
+# Validation ledger (initial)
+All documents in this PR are research designs, not code or validated experiments. Official source portal links were checked on November 12, 2026; access to required granular datasets is **not** verified. No proprietary records, execution adapters or runtime packages are supplied. No claims of CI, test, backtest or alpha evidence. Each idea's EVALS.md defines how to falsify the hypothesis and evaluate implementation. Before merge, reviewers should inspect scope, math/units, confidential content, links and consistency across the 15 packages.

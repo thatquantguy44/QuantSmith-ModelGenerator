@@ -1,0 +1,6 @@
+# ROADMAP — Loan Recall Early-Exercise Boundary
+**Week 1–2: Feasibility.** Validate source access for Loan age, fee, recalls, corporate action calendar, owner restrictions, replacement cost; confirm forecast compliant beneficial-owner recall exercise and source replacement, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `constant owner-specific recall probability` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `constrained survival and stopping model`; consider `least-squares Monte Carlo owner exercise policy` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `recall warning, replacement cost, calibration and fail prevention`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or governance and fiduciary rights cannot be traded away.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

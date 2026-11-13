@@ -1,0 +1,2 @@
+# QMG research archive
+Research batches live at `YYYY-MM-DD/`. Each idea is a self-contained research proposal with 14 Markdown files: `README.md`, `SPEC.md`, `PLAN.md`, `TASKS.md`, `ROADMAP.md`, `HANDOFF.md`, `SOURCES.md`, `AGENT.md`, `SKILL.md`, `PROMPT.md`, `TOOLING.md`, `WORKFLOW.md`, `RUNTIME.md`, and `EVALS.md`. Runtimes and test commands are proposals only unless separately implemented and verified. Follow repository `AGENTS.md`.

@@ -1,0 +1,6 @@
+# ROADMAP — Optimal Financing Research Experiment Design
+**Week 1–2: Feasibility.** Validate source access for Experiment budgets, model alternatives, synthetic case studies, past evidence quality and reproducibility logs; confirm allocate scarce research effort to high information-value experiments, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `equal effort per idea` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `Bayesian value-of-information and sequential experiment selection`; consider `knowledge-gradient portfolio policy with correlated research tasks` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `decision value per research hour, false discovery, stopping time and deployed value`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or retrospective outcomes are selectively recorded and success probabilities subjective.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

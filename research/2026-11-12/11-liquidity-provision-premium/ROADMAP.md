@@ -1,0 +1,6 @@
+# ROADMAP — Securities Lending Liquidity Provision Premium
+**Week 1–2: Feasibility.** Validate source access for Lender inventory changes, special fees, recalls, utilization, systemic stress factors; confirm value dependable securities supply during high financing stress, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `trailing revenue per lendable dollar` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `conditional financing factor decomposition`; consider `endogenous supply/fee equilibrium with nonlinear downside beta` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `stress carry, stability, adjusted yield and mandate value`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or composition and survivorship bias can masquerade as a premium.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

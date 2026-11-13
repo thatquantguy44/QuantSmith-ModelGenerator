@@ -1,0 +1,6 @@
+# ROADMAP — Cross-Currency Repo Basis Optimization
+**Week 1–2: Feasibility.** Validate source access for FX swaps, currencies, tenor rates, haircuts, FX settlements, taxes, legal eligibility; confirm choose FX-hedged financing currency and legal collateral path, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `domestic collateral and repo only` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `covered-interest-parity-adjusted funding network`; consider `stochastic multi-currency funding and collateral flow` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `hedged carry, capacity, FX basis risk and all-in spread`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or false arbitrage from stale asynchronous or inaccessible quotes.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

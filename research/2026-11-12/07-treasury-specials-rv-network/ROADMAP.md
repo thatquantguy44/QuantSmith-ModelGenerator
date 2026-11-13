@@ -1,0 +1,6 @@
+# ROADMAP — Treasury Specials Relative-Value Network
+**Week 1–2: Feasibility.** Validate source access for CUSIP-level repo and general-collateral rates, SOMA auctions, supply, futures basket, fails; confirm identify executable repo RV across related Treasury CUSIPs, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `historical CUSIP z-score of specials` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `CUSIP graph, cointegration and structural event controls`; consider `dynamic security-specific financing equilibrium` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `net spread convergence, realized returns, capital and fail risk`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or public SOMA cannot substitute for executable CUSIP quotes.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.

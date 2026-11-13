@@ -1,0 +1,6 @@
+# ROADMAP — Beneficial-Owner Revenue-Sharing Mechanism
+**Week 1–2: Feasibility.** Validate source access for Owner fee splits, available holdings, program restrictions, lending volume and recalls; confirm design fair participation-aware lending revenue splits, legal restrictions, unit, economics and initial research cost. Stop if licensed data, event clock or legally possible alternatives are absent.
+**Week 3–4: Baseline.** Establish synthetic fixtures and a cost-inclusive `fixed schedule of revenue sharing` simulator. Gate: AC-001/AC-002 and signed specification.
+**Week 5–8: Candidate.** Prototype `principal-agent participation and supply elasticity`; consider `hierarchical Bayesian mechanism design with owner heterogeneity` only after a controlled ablation. Gate: interpretable holdout comparison and no future information.
+**Week 9–12: Shadow review.** Present `new supply, agent revenue, owner revenue, program retention`, confidence ranges, incident/risk scenarios and break-even costs. Stop if advantage does not survive costs or unobservable selection and fairness/fiduciary restrictions.
+**Beyond:** Human approval before any real data connection or live integration. No deployment is implied.
