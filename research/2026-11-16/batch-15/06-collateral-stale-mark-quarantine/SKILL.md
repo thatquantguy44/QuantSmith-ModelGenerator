@@ -1,0 +1,17 @@
+---
+name: research-collateral-stale-mark-quarantine
+description: Design or evaluate collateral stale-mark quarantine and conservative valuation for US and euro-area secured financing collateral; use for the stated economic decision, point-in-time data audit, baseline challenge and falsification gates. Research workflow only; not a deployed runtime.
+---
+
+# Research Collateral Stale-Mark Quarantine and Conservative Valuation
+
+1. State the decision: Quarantine a suspect mark or assign a conservative valuation interval, escalating exceptions rather than automatically altering contractual marks. Read SPEC for `QMG-20261116-06` requirements and EVALS for the frozen gate before selecting a model.
+2. Resolve public sources in SOURCES first. Use collateral instrument x mark source x quote/receive event; reject unlicensed payloads and missing publication times. Preserve observed, published, received, available and effective times separately.
+3. Align inputs to this clock: Gate each mark at ingestion before its use in a financing solve; reference marks must be received earlier than the current solve. Labels are adjudications collected later and assigned only to future model training windows. Build source age, price convention residual, lineage overlap and conservative interval. Keep future outcomes and later amendments out of features.
+4. Reproduce the baseline: Use latest received price within a fixed one-day age limit; otherwise last valid mark with static buffer. Match risk, costs, sample, execution clock and permitted actions before testing Robust cross-source median and asset-specific age/interval rule.
+5. Run the domain negative test: Inject a 100x currency/unit error, stale timestamp, ex-coupon drop and two nominally independent marks with identical upstream provenance; detect unit/staleness defects while preserving valid convention changes. Stop on any future-data acceptance or hard-constraint violation.
+6. Challenge the hypothesis: A cross-source temporal-consistency gate reduces unsecured-value underestimation by at least 30% versus last-price carry-forward at an operational false-quarantine rate below 1%. Apply exactly: GO if underestimation falls >=30%, clean-mark false quarantine <1%, and lower-bound coverage >=99% in stress replay; reject if benefit comes only from excessive haircuts or review burden exceeds 0.5 FTE per 10k instruments. Report all failed variants and effective independent sample size.
+7. Review Illustrative $1bn monitored collateral; benefits are operational hours and conservatively estimated error-loss avoidance, not additive lending alpha. Conservative marks can reduce usable funding capacity. Recompute the purely illustrative ROI using measured cost evidence if available; otherwise retain the assumption label and negative scenarios.
+8. Return mark status, safe monitoring valuation, lineage warning and escalation reason, uncertainty, source lineage and a GO/STOP/BLOCKED verdict. Escalate Independent sources can share the same vendor lineage. Corporate actions and currency factors can look like outliers; later corrections create hindsight labels. Never trade, change contracts, deploy or claim empirical completion from this document alone.
+
+Use PLAN for adapter boundaries and TASKS for traceability; retain immutable manifests and dependency locks when implementation is later authorized. This repository workflow is not installed as a personal ChatGPT skill.

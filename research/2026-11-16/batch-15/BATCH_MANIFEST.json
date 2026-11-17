@@ -1,0 +1,199 @@
+{
+  "batch": 15,
+  "local_date": "2026-11-16",
+  "timezone": "America/New_York",
+  "run_key": "2026-11-16-initial-20",
+  "branch": "research/2026-11-16-batch-15",
+  "base_main": "7be0fd276c875bf1aace6c96577c48506bb8b300",
+  "prepared_at_utc": "2026-11-17T02:38:22+00:00",
+  "prepared_at_et": "2026-11-16T21:38:22-05:00",
+  "category_counts": {
+    "A": 10,
+    "B": 10
+  },
+  "archive_readme_count": 35,
+  "evidence_state": "DESIGN_WRITTEN_EMPIRICAL_BLOCKED",
+  "research_runtime_implemented": false,
+  "ideas": [
+    {
+      "id": "QMG-20261116-01",
+      "n": 1,
+      "category": "A",
+      "folder": "01-repo-economic-preserving-compression",
+      "decision": "Select existing tickets to tear up or resize without changing each participant's dated cash and CUSIP obligations.",
+      "target": "retained gross notional and verified per-date cash/security conservation",
+      "score": 94
+    },
+    {
+      "id": "QMG-20261116-02",
+      "n": 2,
+      "category": "A",
+      "folder": "02-ecb-eligibility-cliff-prepositioning",
+      "decision": "Preposition replacement assets before an announced effective date while charging carry, haircut and transfer costs.",
+      "target": "replacement implementation cost and eligible-value shortfall",
+      "score": 92
+    },
+    {
+      "id": "QMG-20261116-03",
+      "n": 3,
+      "category": "A",
+      "folder": "03-sterling-iltr-maturity-ladder",
+      "decision": "Distribute a fixed eligible reserve requirement across future ILTR auctions and collateral sets without assuming a strategic low bid improves the clearing price.",
+      "target": "cost of a reserve maturity ladder subject to stressed coverage",
+      "score": 84
+    },
+    {
+      "id": "QMG-20261116-04",
+      "n": 4,
+      "category": "A",
+      "folder": "04-futures-delivery-inventory-reservation",
+      "decision": "Reserve eligible inventory for an existing futures short versus lending it, charging the marginal delivery-option opportunity cost.",
+      "target": "net lending revenue plus delivery economics for a fixed pre-existing futures obligation",
+      "score": 86
+    },
+    {
+      "id": "QMG-20261116-05",
+      "n": 5,
+      "category": "A",
+      "folder": "05-loan-repricing-inertia-bands",
+      "decision": "Choose a fee-change threshold and batching cadence for existing loans rather than repricing every observed basis-point move.",
+      "target": "incremental net fee dollars minus message labor and attrition loss",
+      "score": 91
+    },
+    {
+      "id": "QMG-20261116-06",
+      "n": 6,
+      "category": "A",
+      "folder": "06-collateral-stale-mark-quarantine",
+      "decision": "Quarantine a suspect mark or assign a conservative valuation interval, escalating exceptions rather than automatically altering contractual marks.",
+      "target": "underestimated unsecured exposure and false quarantine burden",
+      "score": 93
+    },
+    {
+      "id": "QMG-20261116-07",
+      "n": 7,
+      "category": "A",
+      "folder": "07-owner-co-withdrawal-inventory-limits",
+      "decision": "Cap loans supported by correlated sources and keep replacement options against simultaneous owner withdrawals.",
+      "target": "joint inventory-shortfall distribution and net cost of an allocation limit",
+      "score": 85
+    },
+    {
+      "id": "QMG-20261116-08",
+      "n": 8,
+      "category": "A",
+      "folder": "08-cross-border-calendar-bridge",
+      "decision": "Choose an earlier settlement date and minimal bridge cash for already approved cross-border obligations.",
+      "target": "bridge cash-days and avoidable calendar exceptions",
+      "score": 90
+    },
+    {
+      "id": "QMG-20261116-09",
+      "n": 9,
+      "category": "A",
+      "folder": "09-repo-benchmark-outage-monitor",
+      "decision": "Choose whether a funding-risk report may use a published rate, show an uncertainty interval, or require manual review; never replace a contractual fallback.",
+      "target": "reporting error and escalation burden under delayed/corrected publication",
+      "score": 89
+    },
+    {
+      "id": "QMG-20261116-10",
+      "n": 10,
+      "category": "A",
+      "folder": "10-securities-loan-dust-lot-consolidation",
+      "decision": "Consolidate or close eligible small lots within the same owner/borrower/legal permissions while preserving economic exposure and service constraints.",
+      "target": "active-ticket count and net servicing-adjusted margin",
+      "score": 88
+    },
+    {
+      "id": "QMG-20261116-11",
+      "n": 11,
+      "category": "B",
+      "folder": "11-japan-buyback-completion-credibility",
+      "decision": "Weight an announcement-event equity sleeve by ex-ante completion probability rather than headline authorized buyback size.",
+      "target": "program completion probability and 60-day residual equity return",
+      "score": 92
+    },
+    {
+      "id": "QMG-20261116-12",
+      "n": 12,
+      "category": "B",
+      "folder": "12-brazil-inflation-diffusion-breakevens",
+      "decision": "Choose a DV01-neutral nominal-versus-inflation-linked bond overlay using released inflation breadth and survey dispersion.",
+      "target": "63-session DV01-neutral excess breakeven return net of mechanical carry",
+      "score": 87
+    },
+    {
+      "id": "QMG-20261116-13",
+      "n": 13,
+      "category": "B",
+      "folder": "13-europe-gas-withdrawal-deliverability",
+      "decision": "Hedge winter peak gas-delivery risk using facility-level withdrawal constraints rather than national percent-full alone.",
+      "target": "winter peak procurement tail cost and deliverable MWh shortfall",
+      "score": 89
+    },
+    {
+      "id": "QMG-20261116-14",
+      "n": 14,
+      "category": "B",
+      "folder": "14-india-index-flow-duration-neutral",
+      "decision": "Tilt duration-neutral eligible-versus-near-eligible government bond baskets using dated projected passive demand and realized foreign-flow saturation.",
+      "target": "20-session inclusion-window residual return and diminishing impact at high ownership",
+      "score": 90
+    },
+    {
+      "id": "QMG-20261116-15",
+      "n": 15,
+      "category": "B",
+      "folder": "15-us-muni-call-exercise-friction",
+      "decision": "Choose between matched callable bonds using a calibrated call hazard and cash-flow stress rather than yield-to-worst alone.",
+      "target": "call timing distribution, cash-flow forecast error and duration-adjusted bond return",
+      "score": 88
+    },
+    {
+      "id": "QMG-20261116-16",
+      "n": 16,
+      "category": "B",
+      "folder": "16-global-volatility-corridor-jump-budget",
+      "decision": "Allocate a limited short-corridor-variance risk budget across US and European indices while purchasing a defined tail hedge.",
+      "target": "net option-strip carry and stress/tail loss at fixed hedge premium",
+      "score": 83
+    },
+    {
+      "id": "QMG-20261116-17",
+      "n": 17,
+      "category": "B",
+      "folder": "17-south-africa-power-outage-cashflows",
+      "decision": "Build a sector/beta-neutral equity hedge against power-supply deterioration using pre-disclosed operational exposure.",
+      "target": "power-shock residual equity sensitivity and hedge downside error",
+      "score": 85
+    },
+    {
+      "id": "QMG-20261116-18",
+      "n": 18,
+      "category": "B",
+      "folder": "18-global-covariance-break-risk-budget",
+      "decision": "Choose between holding current risk weights and a constrained rebalance when covariance-change evidence exceeds its execution cost.",
+      "target": "realized risk-contribution tracking error at matched turnover and volatility",
+      "score": 94
+    },
+    {
+      "id": "QMG-20261116-19",
+      "n": 19,
+      "category": "B",
+      "folder": "19-us-cmbs-refinance-disclosure-hazard",
+      "decision": "Limit public CMBS/REIT credit exposure according to released refinance cash-flow gaps and competing maturity outcomes.",
+      "target": "12-month competing refinance outcomes and portfolio loss at fixed spread carry",
+      "score": 86
+    },
+    {
+      "id": "QMG-20261116-20",
+      "n": 20,
+      "category": "B",
+      "folder": "20-australia-water-allocation-basis",
+      "decision": "Choose regional agricultural exposure or a crop-futures hedge only when released water scarcity changes affect a documented crop budget and survive basis costs.",
+      "target": "regional crop-margin forecast and hedge basis-adjusted downside loss",
+      "score": 81
+    }
+  ]
+}

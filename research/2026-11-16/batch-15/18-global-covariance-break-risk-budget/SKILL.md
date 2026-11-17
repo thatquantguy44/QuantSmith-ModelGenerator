@@ -1,0 +1,17 @@
+---
+name: research-global-covariance-break-risk-budget
+description: Design or evaluate global covariance-break risk-budget controller for US, Europe, Japan and liquid EM; equity, rates, FX and commodities; use for the stated economic decision, point-in-time data audit, baseline challenge and falsification gates. Research workflow only; not a deployed runtime.
+---
+
+# Research Global Covariance-Break Risk-Budget Controller
+
+1. State the decision: Choose between holding current risk weights and a constrained rebalance when covariance-change evidence exceeds its execution cost. Read SPEC for `QMG-20261116-18` requirements and EVALS for the frozen gate before selecting a model.
+2. Resolve public sources in SOURCES first. Use instrument x completed local session x common information cutoff; reject unlicensed payloads and missing publication times. Preserve observed, published, received, available and effective times separately.
+3. Align inputs to this clock: Decide at 16:30 America/New_York using only completed market sessions and public data received by then; execute each market's next liquid session. Stale Asian observations remain lagged rather than filled with later prices. Build lag-aware covariance, break statistic and marginal turnover cost. Keep future outcomes and later amendments out of features.
+4. Reproduce the baseline: Monthly risk parity using 60-day EWMA covariance and fixed weight caps; compare a simple shrinkage covariance with no break detection. Match risk, costs, sample, execution clock and permitted actions before testing Sequential covariance change detector plus shrinkage and cost-aware no-trade bands.
+5. Run the domain negative test: Delay Japanese returns one extra session and perturb calendar alignment: claimed benefit should remain directionally stable; future-price replacement must fail an availability assertion. Stop on any future-data acceptance or hard-constraint violation.
+6. Challenge the hypothesis: Sequential break detection with a no-trade region lowers realized risk-budget tracking error by at least 15% versus monthly EWMA rebalancing without increasing turnover. Apply exactly: GO if risk-budget RMSE falls >=15% and turnover does not rise over >=3 held-out regimes and multiple asynchronous-market assumptions; STOP if improvement is due to more leverage, reduced target risk or tuned crisis dates. Report all failed variants and effective independent sample size.
+7. Review Illustrative $100m liquid multi-asset allocation; cap <=1% ADV and add market-specific impact, rolls and FX conversion. Capacity derives from instrument liquidity, not covariance model size. Recompute the purely illustrative ROI using measured cost evidence if available; otherwise retain the assumption label and negative scenarios.
+8. Return hold/rebalance research decision, risk-contribution certificate and stale-session report, uncertainty, source lineage and a GO/STOP/BLOCKED verdict. Escalate Look-ahead session alignment, ETF backfill, futures rolls and survivorship change the correlation structure. Same-day cross-market fills may be economically impossible. Never trade, change contracts, deploy or claim empirical completion from this document alone.
+
+Use PLAN for adapter boundaries and TASKS for traceability; retain immutable manifests and dependency locks when implementation is later authorized. This repository workflow is not installed as a personal ChatGPT skill.
