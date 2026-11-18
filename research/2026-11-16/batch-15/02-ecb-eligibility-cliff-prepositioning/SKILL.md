@@ -1,0 +1,17 @@
+---
+name: research-ecb-eligibility-cliff-prepositioning
+description: Design or evaluate ecb collateral eligibility-cliff prepositioning for Euro area; EUR marketable collateral; use for the stated economic decision, point-in-time data audit, baseline challenge and falsification gates. Research workflow only; not a deployed runtime.
+---
+
+# Research ECB Collateral Eligibility-Cliff Prepositioning
+
+1. State the decision: Preposition replacement assets before an announced effective date while charging carry, haircut and transfer costs. Read SPEC for `QMG-20261116-02` requirements and EVALS for the frozen gate before selecting a model.
+2. Resolve public sources in SOURCES first. Use ISIN x release version x effective date; reject unlicensed payloads and missing publication times. Preserve observed, published, received, available and effective times separately.
+3. Align inputs to this clock: Evaluate after verified ECB publication and ingestion, with a minimum 30-minute operational latency; any action is next eligible settlement window. Historical daily snapshots without timestamp proof are usable only with a conservative next-business-day decision lag. Build announced future eligibility matrix, haircut-adjusted coverage and replacement ladder. Keep future outcomes and later amendments out of features.
+4. Reproduce the baseline: Replace only at maturity or first effective ineligibility date using cheapest currently eligible asset. Match risk, costs, sample, execution clock and permitted actions before testing Rolling-horizon linear allocation using announced eligibility transitions.
+5. Run the domain negative test: Move an announcement after the decision timestamp: all corresponding anticipatory trades must disappear; maturity may remain predictable from previously published terms. Stop on any future-data acceptance or hard-constraint violation.
+6. Challenge the hypothesis: A versioned effective-date planner lowers replacement expense by at least 2 annualized basis points on affected balances versus replacing at the deadline, with no use of information before announcement. Apply exactly: GO if cost saving >=2 annualized bps on affected balances and zero eligibility violations across >=20 independent transition clusters; worst stress shortfall no larger than baseline. STOP if timestamp-safe sample is inadequate or cost rises under doubled bid/ask. Report all failed variants and effective independent sample size.
+7. Review Illustrative EUR500m affected annual balances, converted to USD equivalent for ROI. Limited by replacement-asset depth, settlement access and concentration limits; use <=1% observed daily turnover until calibrated. Recompute the purely illustrative ROI using measured cost evidence if available; otherwise retain the assumption label and negative scenarios.
+8. Return dated replacement schedule and coverage stress certificate, uncertainty, source lineage and a GO/STOP/BLOCKED verdict. Escalate Current eligibility is not historical eligibility; rating changes may be anticipated in prices. Framework eligibility does not establish institution-specific usability, own-use treatment or transfer rights. Never trade, change contracts, deploy or claim empirical completion from this document alone.
+
+Use PLAN for adapter boundaries and TASKS for traceability; retain immutable manifests and dependency locks when implementation is later authorized. This repository workflow is not installed as a personal ChatGPT skill.

@@ -1,0 +1,17 @@
+---
+name: research-australia-water-allocation-basis
+description: Design or evaluate australian water allocation shadow price and crop basis for Murray-Darling Basin, Australia; water allocations and agricultural exposure; use for the stated economic decision, point-in-time data audit, baseline challenge and falsification gates. Research workflow only; not a deployed runtime.
+---
+
+# Research Australian Water Allocation Shadow Price and Crop Basis
+
+1. State the decision: Choose regional agricultural exposure or a crop-futures hedge only when released water scarcity changes affect a documented crop budget and survive basis costs. Read SPEC for `QMG-20261116-20` requirements and EVALS for the frozen gate before selecting a model.
+2. Resolve public sources in SOURCES first. Use water zone x allocation release x reported trade and crop season; reject unlicensed payloads and missing publication times. Preserve observed, published, received, available and effective times separately.
+3. Align inputs to this clock: Update only after verified allocation announcement; water transaction price enters at public reporting time, not settlement/trade date. Trade a hedge no earlier than next liquid session; use seasons as independent split units. Build announced allocation innovation, transfer-zone shadow price and crop-water budget. Keep future outcomes and later amendments out of features.
+4. Reproduce the baseline: Seasonal allocation-volume score with a fixed regional crop basket and constant futures hedge ratio. Match risk, costs, sample, execution clock and permitted actions before testing Constrained crop-water optimization with allocation-shock local projections.
+5. Run the domain negative test: Give identical aggregate water to two disconnected zones: optimization must retain different shadow prices; delaying trade reporting must move its first eligible feature date. Stop on any future-data acceptance or hard-constraint violation.
+6. Challenge the hypothesis: Allocation-decision surprises and transfer-constrained water shadow prices improve regional crop-margin forecasts by at least 10% versus seasonal water availability, and reduce hedge downside error by 5% net of costs. Apply exactly: GO if margin MAE improves >=10% and net hedge downside loss >=5% across >=8 independently held-out seasons/zones; STOP if publication lag eliminates signal or local scarcity has no stable tradable crop exposure. Report all failed variants and effective independent sample size.
+7. Review Illustrative $15m agricultural exposure, small research capacity. Limit futures to <=1% lagged volume; water transactions require separate legal/access review and are not assumed executable by the researcher. Recompute the purely illustrative ROI using measured cost evidence if available; otherwise retain the assumption label and negative scenarios.
+8. Return crop-margin scenario, local water shadow price and hedge-basis feasibility verdict, uncertainty, source lineage and a GO/STOP/BLOCKED verdict. Escalate Water rights, allocation trades and permanent entitlements are different assets. Thin reported prices, changing transfer limits and endogenous crop choice can defeat identification; crop futures may be a poor regional hedge. Never trade, change contracts, deploy or claim empirical completion from this document alone.
+
+Use PLAN for adapter boundaries and TASKS for traceability; retain immutable manifests and dependency locks when implementation is later authorized. This repository workflow is not installed as a personal ChatGPT skill.
