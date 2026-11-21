@@ -1,17 +1,13 @@
-# Quant Model Generator (QMG)
+# QuantSmith-ModelGenerator (QMG)
+Public, reproducible incubation of securities-finance, domestic/global quantitative research and reusable AI-assisted research workflows.
 
-A public, reproducible research idea incubator for quantitative finance, securities finance, financing-market microstructure, and optimization.
+## Scheduled batch structure
+Each complete batch delivers **exactly 20 distinct, falsifiable research projects** split into **10 securities-finance** and **10 broad domestic/global quantitative market/data-science** projects. Research is archived under `research/YYYY-MM-DD/` (with batch-number subfolder if a date repeats) and reviewed in **one draft GitHub pull request per batch**, never auto-merged. Earlier legacy 15-idea batches are preserved unmodified.
 
-## Research batches
+Each idea contains 14 domain-specific Markdown contracts: `README`, `SPEC`, `PLAN`, `TASKS`, `ROADMAP`, `HANDOFF`, `SOURCES`, `AGENT`, `SKILL`, `PROMPT`, `TOOLING`, `WORKFLOW`, `RUNTIME`, `EVALS`. They are design documents unless independently implemented, tested and signed off.
 
-Each run is archived under `research/YYYY-MM-DD/` with a batch index and one numbered folder per idea. Each idea provides scoped research documentation including a research brief, specification, implementation plan, work breakdown, handoff, roadmap, data sources, citations, and evaluation criteria.
+## Evidence and privacy
+Point-in-time controls, source rights, feasible economic baselines, negative results and honest implementation status are mandatory. Public source links and synthetic examples only. Do not expose employer/client positions, nonpublic trading data, secrets or unlicensed datasets. Review `AGENTS.md` before contributing and `research/` for history.
 
-The scheduled research generator creates a dated `research/YYYY-MM-DD` branch and opens a **draft pull request** against `main`. Human review is required before merging. Slack posts link to the PR and summarize the ranked ideas.
-
-## Research standards
-
-- Propose falsifiable hypotheses; distinguish ideas from verified findings.
-- Include mathematical formulation, data contracts, point-in-time validity, baseline, advanced model, evaluation design, implementation costs, estimated ROI assumptions, and publishability.
-- Prefer publicly accessible and legally usable datasets. Never commit confidential employer, client, or counterparty information to this public repository.
-- Validate Markdown links and documents; keep citations traceable. Do not imply unexecuted code/tests were run.
-- One batch PR per run; do not open 15 separate PRs unless specifically requested. Never auto-merge.
+## Latest research
+[November 20, 2026 — Batch 16, twenty ideas](research/2026-11-20/README.md). Publication and merge status must be checked via GitHub; a branch draft is not evidence of deployment.
