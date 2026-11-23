@@ -12,7 +12,7 @@ TBA rolls embed delivery-option value; treating the drop as a pure financing rat
 ```text
 min_{q_p>=0} Σ_p q_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p q_p = DeliverableNotional, 0<=q_p<=PoolAvailable_p*Eligible_p
 ```
-**Variables:** x_p is assigned pool fraction/selection, RollDrop is dollar-roll price drop, Eligible_p delivery eligibility; preserve coupon/payup units.
+**Variables:** q_p is eligible delivered pool notional, RollDrop is dollar-roll price drop, Eligible_p delivery eligibility; preserve coupon/payup units.
 
 **Data:** TBA front/back prices, pools, payups, coupon schedules, specified-pool risk, MBSD netting, EPN eligibility and execution costs
 

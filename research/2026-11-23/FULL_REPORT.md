@@ -31,7 +31,7 @@
 
 **Falsifiable H1:** Explicit deliverability and pool opportunity costs explain dollar-roll implied funding differences beyond coupon, term and simple financing spreads.
 
-**Math (proposed):** `min_{x_p in {0,1}} Σ_p x_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p x_p = DeliverableNotional, Eligible_p=1`. **Variables/constraints:** x_p is assigned pool fraction/selection, RollDrop is dollar-roll price drop, Eligible_p delivery eligibility; preserve coupon/payup units.
+**Math (proposed):** `min_{q_p>=0} Σ_p q_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p q_p = DeliverableNotional, 0<=q_p<=PoolAvailable_p*Eligible_p`. **Variables/constraints:** q_p is eligible delivered pool notional, RollDrop is dollar-roll price drop, Eligible_p delivery eligibility; preserve coupon/payup units.
 
 **Data + point-in-time:** TBA front/back prices, pools, payups, coupon schedules, specified-pool risk, MBSD netting, EPN eligibility and execution costs **Decision clock:** Decision at pre-roll executable quote; EPN pool assignment becomes known later and must not leak into earlier signals.
 
@@ -202,7 +202,7 @@
 
 **Falsifiable H1:** Dual-priced LCR/NSFR constraints reorder feasible funding selections and improve all-in liquidity-adjusted economics versus spread ranking.
 
-**Math (proposed):** `min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA_out/HQLA_in≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need`. **Variables/constraints:** x_i secured funding quantities, k_i legal balance-sheet charge; LCR, ASF, RSF use approved regulatory definitions.
+**Math (proposed):** `min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA(x)/NetCashOutflows(x)≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need`. **Variables/constraints:** x_i secured funding quantities, k_i legal balance-sheet charge; LCR, ASF, RSF use approved regulatory definitions.
 
 **Data + point-in-time:** Public Basel ratio methodology/aggregate trends, synthetic collateral classes, cashflow ladder and legal-entity matrices **Decision clock:** Regulatory rule version, haircut classification and reporting entity apply as of funding decision.
 
