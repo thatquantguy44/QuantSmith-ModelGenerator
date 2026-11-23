@@ -9,7 +9,7 @@ A cheap repo can be uneconomic when it reduces HQLA or increases required stable
 
 ## Mathematics and variables
 ```text
-min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA_out/HQLA_in≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need
+min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA(x)/NetCashOutflows(x)≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need
 ```
 x_i secured funding quantities, k_i legal balance-sheet charge; LCR, ASF, RSF use approved regulatory definitions.
 All time indices, units, constraints and payoff signs must be independently checked before a production implementation.

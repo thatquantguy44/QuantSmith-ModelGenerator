@@ -16,7 +16,7 @@ COST/ELIGIBILITY CONTRACT: {{COST_AND_LEGAL_CONFIG}}
 RANDOM_SEED: {{SEED}}
 REQUIRED FIELDS: TBA front/back prices, pools, payups, coupon schedules, specified-pool risk, MBSD netting, EPN eligibility and execution costs
 
-FORMULATION: min_{x_p in {0,1}} Σ_p x_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p x_p = DeliverableNotional, Eligible_p=1
+FORMULATION: min_{q_p>=0} Σ_p q_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p q_p = DeliverableNotional, 0<=q_p<=PoolAvailable_p*Eligible_p
 BASELINE: Dollar-roll implied financing vs same-tenor generic repo without delivery-option valuation
 CANDIDATE: Constrained pool-delivery optimizer with observable pool financing carry and roll prices
 ADVANCED OPTION: Stochastic pool quality and delivery-selection real-options game with cheapest-deliverable simulation

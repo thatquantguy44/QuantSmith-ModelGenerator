@@ -9,7 +9,7 @@ Metrics: All-in liquidity-adjusted cost, marginal dual price, buffer breaches, s
 
 ## Mandatory synthetic invariants
 - `available_at_utc <= decision_time`, calendar/session alignment and source-version hash.
-- Feasible decision constraints match: min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA_out/HQLA_in≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need.
+- Feasible decision constraints match: min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA(x)/NetCashOutflows(x)≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need.
 - Units and payable/receivable cash direction from: x_i secured funding quantities, k_i legal balance-sheet charge; LCR, ASF, RSF use approved regulatory definitions.
 - True negative controls: Entity-specific regulatory implementation and internal forecasts differ; cannot reconstruct actual LCR from public totals.
 - Equal event/asset universe, quoted bid/ask, capacity and no-action alternatives.

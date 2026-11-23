@@ -16,7 +16,7 @@ COST/ELIGIBILITY CONTRACT: {{COST_AND_LEGAL_CONFIG}}
 RANDOM_SEED: {{SEED}}
 REQUIRED FIELDS: Public Basel ratio methodology/aggregate trends, synthetic collateral classes, cashflow ladder and legal-entity matrices
 
-FORMULATION: min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA_out/HQLA_in≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need
+FORMULATION: min_x Σ_i (r_i*x_i + k_i*x_i) subject to HQLA(x)/NetCashOutflows(x)≥LCR_min and ASF(x)/RSF(x)≥NSFR_min, Σ_i x_i≥Need
 BASELINE: Rank repo offers by quoted rate subject to gross notional limits
 CANDIDATE: Linear/mixed-integer secured funding allocation with LCR/NSFR dual-price attribution
 ADVANCED OPTION: Scenario-based shadow-price frontier with intraday and quarter-end liquidity risk

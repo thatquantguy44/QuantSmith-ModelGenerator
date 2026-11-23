@@ -9,7 +9,7 @@ Metrics: Net financing bps, cheapest-deliverable premium, pre-settlement fail ex
 
 ## Mandatory synthetic invariants
 - `available_at_utc <= decision_time`, calendar/session alignment and source-version hash.
-- Feasible decision constraints match: min_{x_p in {0,1}} Σ_p x_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p x_p = DeliverableNotional, Eligible_p=1.
+- Feasible decision constraints match: min_{q_p>=0} Σ_p q_p*(PoolCarry_p + DeliveryCost_p - RollDrop_p), subject to Σ_p q_p = DeliverableNotional, 0<=q_p<=PoolAvailable_p*Eligible_p.
 - Units and payable/receivable cash direction from: x_p is assigned pool fraction/selection, RollDrop is dollar-roll price drop, Eligible_p delivery eligibility; preserve coupon/payup units.
 - True negative controls: Pool price selection, payup optionality, actual pool availability and post-trade EPN leakage.
 - Equal event/asset universe, quoted bid/ask, capacity and no-action alternatives.
