@@ -10,4 +10,4 @@ Each idea contains 14 domain-specific Markdown contracts: `README`, `SPEC`, `PLA
 Point-in-time controls, source rights, feasible economic baselines, negative results and honest implementation status are mandatory. Public source links and synthetic examples only. Do not expose employer/client positions, nonpublic trading data, secrets or unlicensed datasets. Review `AGENTS.md` before contributing and `research/` for history.
 
 ## Latest research
-[November 20, 2026 — Batch 16, twenty ideas](research/2026-11-20/README.md). Publication and merge status must be checked via GitHub; a branch draft is not evidence of deployment.
+[November 23, 2026 — Batch 17, twenty research proposals](research/2026-11-23/README.md). [Full report](research/2026-11-23/FULL_REPORT.md). Publication and merge status must be checked via GitHub; a branch draft is not evidence of deployment.
