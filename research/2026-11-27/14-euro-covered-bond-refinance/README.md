@@ -1,0 +1,16 @@
+# Research brief — Euro Bank Covered versus Unsecured Refinancing Maturity Wall
+**QMG-20261127-14 | B — Domestic/global markets | Euro area bank credit | proposal only**
+## 14 — Euro Bank Covered versus Unsecured Refinancing Maturity Wall
+**B — Domestic/global markets | Euro area bank credit | 92/100 | Medium-high | Conditional on data, capacity and validation; synthetic prototype feasible**
+**Problem and decision:** Forecast relative refinancing spread and funding maturity gaps from public liability disclosures. Existing comparator (rating, duration and sovereign spread regression) may fail under ECB aggregates do not establish individual maturity terms; selection into issuance.
+**H1 (proposed):** Debt maturity and encumbrance measures improve next-quarter refinancing spread MAE by 10% beyond rating and curve factors.
+**Mathematics:** Gap_b,h=Σ_{m≤h} debt_b,m−cash_b,h−committed_b,h; Δs_b=α+β Gap_b,h/assets_b+γ encumbrance_b+controls; do not count uncommitted issuance as cash.
+**Data/grain:** issuer × liability class × reporting vintage; covered/unsecured maturities, encumbrance, bank filings, issuance prices, curves, rating history. **Clock:** filing dissemination before monthly decision; issue prices after actual issuance as outcomes.
+**Baseline → model → advanced:** rating, duration and sovereign spread regression → panel maturity-wall regression with competing liability type → structural joint issuance choice and spread state model.
+**Evaluation:** spread MAE, gap error, coverage, class-adjusted residual. **Go/no-go:** ≥10% MAE improvement on held-out banks/quarters; signs stable under rate controls. **Negative tests:** no issuance censoring; called debt; revised maturities; currency mismatch.
+**Sources:** [ECB securities issues statistics](https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/securities/html/index.da.html); [SEC EDGAR API documentation (6 June 2024)](https://www.sec.gov/search-filings/edgar-application-programming-interfaces). Licensed: licensed individual bond terms, curves, ratings and issue spreads. Permissioned: approved issuer watchlist and exposure limits.
+**Illustrative 24-month scenario (USD thousands; not empirical ROI):** assumed total build/data/maintenance cost C=$155k; annual steady-state net operating benefit before project cost B=$120k; launch lag 7 months, no benefit during lag. Capacity assumption: $120m credit sleeve × 10 bps net annual risk-selection benefit=$120k/year; no guaranteed liquidity. Benefit over 24 months = B×(24−lag)/12=$170.0k; ROI=(benefit−C)/C=+9.7%. Half/base/1.5× benefit sensitivity -45.2%/+9.7%/+64.5%; zero benefit −100%; break-even annual benefit $109.4k. No actual adoption, market capacity, realized P&L or cash savings established; validate opportunity overlap and costs before business case.
+**Publication potential:** Debt composition and refinancing frictions. **Novelty:** Not US deposit beta or LCR/NSFR: covered-versus-unsecured issuer refinancing choice and spread. **Tools proposed:** pandas,statsmodels,lifelines.
+
+## Project navigation
+[SPEC](SPEC.md) · [PLAN](PLAN.md) · [TASKS](TASKS.md) · [ROADMAP](ROADMAP.md) · [HANDOFF](HANDOFF.md) · [SOURCES](SOURCES.md) · [AGENT](AGENT.md) · [SKILL](SKILL.md) · [PROMPT](PROMPT.md) · [TOOLING](TOOLING.md) · [WORKFLOW](WORKFLOW.md) · [RUNTIME](RUNTIME.md) · [EVALS](EVALS.md).

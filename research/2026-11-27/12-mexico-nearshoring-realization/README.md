@@ -1,0 +1,16 @@
+# Research brief — Mexico Nearshoring Realization versus Industrial Equity Expectations
+**QMG-20261127-12 | B — Domestic/global markets | Mexico, US–Mexico industrial corridor | proposal only**
+## 12 — Mexico Nearshoring Realization versus Industrial Equity Expectations
+**B — Domestic/global markets | Mexico, US–Mexico industrial corridor | 94/100 | Medium-high | Conditional on data, capacity and validation; synthetic prototype feasible**
+**Problem and decision:** Estimate whether realized factory labor utilization—not announcements—improves industrial cash-flow forecasts. Existing comparator (FX/export growth plus issuer lagged earnings) may fail under IMMEX program composition shifts; firms disclose incomplete plant geography.
+**H1 (proposed):** IMMEX hours/employment surprise improves next two-quarter industrial earnings forecast MAE by 10% beyond FX and exports.
+**Mathematics:** y_i,t+2=α_i+β_i Σ_r w_ir Δlog(hours_r,t)+γX_t+ε; y earnings growth, w frozen regional exposure, X FX/exports/rates; weights nonnegative sum≤1.
+**Data/grain:** region × release month × issuer; IMMEX staffing/hours, issuer geography, earnings, FX, exports, corporate announcements. **Clock:** first INEGI monthly release and financial report timestamps, region weights frozen before prediction.
+**Baseline → model → advanced:** FX/export growth plus issuer lagged earnings → hierarchical exposure-weighted panel forecast → dynamic factor with announcement-versus-realization measurement error.
+**Evaluation:** MAE, revision sensitivity, sector-neutral forecast IC. **Go/no-go:** ≥10% MAE reduction in untouched quarters; no benefit from future region weights. **Negative tests:** future revisions, missing plant map, peso shock, announcement placebo.
+**Sources:** [INEGI IMMEX August 2026 release](https://en.www.inegi.org.mx/app/saladeprensa/noticia/11288); [SEC EDGAR API documentation (6 June 2024)](https://www.sec.gov/search-filings/edgar-application-programming-interfaces). Licensed: licensed Mexican equity prices and company geographic exposures. Permissioned: approved portfolio sector weights.
+**Illustrative 24-month scenario (USD thousands; not empirical ROI):** assumed total build/data/maintenance cost C=$150k; annual steady-state net operating benefit before project cost B=$80k; launch lag 7 months, no benefit during lag. Capacity assumption: $80m research sleeve × 10 bps annual decision improvement=$80k/year after turnover, capacity unverified. Benefit over 24 months = B×(24−lag)/12=$113.3k; ROI=(benefit−C)/C=-24.4%. Half/base/1.5× benefit sensitivity -62.2%/-24.4%/+13.3%; zero benefit −100%; break-even annual benefit $105.9k. No actual adoption, market capacity, realized P&L or cash savings established; validate opportunity overlap and costs before business case.
+**Publication potential:** Regional industrial measurement and cross-border fundamentals. **Novelty:** Unlike global export-shock propagation: domestic labor realization and issuer cash-flow mapping. **Tools proposed:** statsmodels,pymc,polars.
+
+## Project navigation
+[SPEC](SPEC.md) · [PLAN](PLAN.md) · [TASKS](TASKS.md) · [ROADMAP](ROADMAP.md) · [HANDOFF](HANDOFF.md) · [SOURCES](SOURCES.md) · [AGENT](AGENT.md) · [SKILL](SKILL.md) · [PROMPT](PROMPT.md) · [TOOLING](TOOLING.md) · [WORKFLOW](WORKFLOW.md) · [RUNTIME](RUNTIME.md) · [EVALS](EVALS.md).

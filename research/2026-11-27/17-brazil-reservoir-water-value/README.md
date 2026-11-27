@@ -1,0 +1,16 @@
+# Research brief — Brazil Reservoir Water Value and Utility Earnings Risk
+**QMG-20261127-17 | B — Domestic/global markets | Brazil hydroelectric generation and utility equities | proposal only**
+## 17 — Brazil Reservoir Water Value and Utility Earnings Risk
+**B — Domestic/global markets | Brazil hydroelectric generation and utility equities | 89/100 | High | Conditional on data, capacity and validation; synthetic prototype feasible**
+**Problem and decision:** Estimate shadow water value and thermal substitution cost to stress utility cash flows. Existing comparator (seasonal reservoir percentile and lagged marginal cost) may fail under physical dispatch simplification, hydrology revision and issuer hedging obscure returns.
+**H1 (proposed):** Reservoir-aware dispatch simulation improves next-month marginal-cost forecast MAE by 10% versus seasonal reservoir-percentile baseline.
+**Mathematics:** V_t=min_g E[Σ c_th g_th+λ EENS+V_{t+1}(S')]; S'=S+inflow−hydro−spill, energy balance Σg≥load, S bounds; quantities MWh, costs BRL.
+**Data/grain:** ONS subsystem × day × release vintage; stored energy, inflow, generation, load, thermal costs, transmission constraints, issuer contract exposures. **Clock:** only archived public release versions; ONS data may revise; forecast issuance known before decision.
+**Baseline → model → advanced:** seasonal reservoir percentile and lagged marginal cost → simplified stochastic dispatch LP → multistage stochastic dual dynamic programming with hydrological scenarios.
+**Evaluation:** marginal cost MAE, reliability, earnings scenario error, feasible dispatch. **Go/no-go:** ≥10% forecast MAE improvement; no storage/energy balance violations; pricing claims require market access. **Negative tests:** dry-year holdout, negative storage, future actual inflows, spill.
+**Sources:** [ONS stored-energy daily by subsystem](https://dados.ons.org.br/dataset/ear-diario-por-subsistema). Licensed: licensed settlement prices and Brazilian company exposures. Permissioned: approved utility contracts or risk exposures.
+**Illustrative 24-month scenario (USD thousands; not empirical ROI):** assumed total build/data/maintenance cost C=$185k; annual steady-state net operating benefit before project cost B=$80k; launch lag 8 months, no benefit during lag. Capacity assumption: $80m utility risk sleeve × 10 bps annual risk improvement=$80k/year; no physical dispatch authority. Benefit over 24 months = B×(24−lag)/12=$106.7k; ROI=(benefit−C)/C=-42.3%. Half/base/1.5× benefit sensitivity -71.2%/-42.3%/-13.5%; zero benefit −100%; break-even annual benefit $138.8k. No actual adoption, market capacity, realized P&L or cash savings established; validate opportunity overlap and costs before business case.
+**Publication potential:** Stochastic resource control and power-linked equity risk. **Novelty:** Distinct from EU congestion, South Africa outages and weather-gas: intertemporal water storage economics. **Tools proposed:** highspy,cvxpy,numpy.
+
+## Project navigation
+[SPEC](SPEC.md) · [PLAN](PLAN.md) · [TASKS](TASKS.md) · [ROADMAP](ROADMAP.md) · [HANDOFF](HANDOFF.md) · [SOURCES](SOURCES.md) · [AGENT](AGENT.md) · [SKILL](SKILL.md) · [PROMPT](PROMPT.md) · [TOOLING](TOOLING.md) · [WORKFLOW](WORKFLOW.md) · [RUNTIME](RUNTIME.md) · [EVALS](EVALS.md).

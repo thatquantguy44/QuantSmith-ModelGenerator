@@ -1,0 +1,16 @@
+# Research brief — Exchange Metals Off-Warrant Inventory and Calendar-Spread Scarcity
+**QMG-20261127-16 | B — Domestic/global markets | London Metal Exchange global base metals | proposal only**
+## 16 — Exchange Metals Off-Warrant Inventory and Calendar-Spread Scarcity
+**B — Domestic/global markets | London Metal Exchange global base metals | 90/100 | Medium-high | Conditional on data, capacity and validation; synthetic prototype feasible**
+**Problem and decision:** Measure whether off-warrant inventory changes improve near-term metal spread risk versus exchange-visible stocks. Existing comparator (on-warrant stocks and curve momentum) may fail under warrant cancellations can be relocation not end demand; data rights and warehouse incentives.
+**H1 (proposed):** Lag-correct off-warrant data reduces 20-day spread forecast MAE by 10% versus on-warrant stock and seasonal controls.
+**Mathematics:** s_t=F_near−F_far USD/t; x=Δ log(1+offwarrant tonnes); s_t+h=α+β x_t+γ warranted_t+δ controls; position≤approved liquidity; delayed data tier fixed.
+**Data/grain:** metal × warehouse region × publication date; off/on-warrant inventories, cancellations, warehouse movements, futures settlements, financing/storage costs. **Clock:** free data only after actual T+3 or current verified delay; paid T+1 separately; execute next quote.
+**Baseline → model → advanced:** on-warrant stocks and curve momentum → distributed-lag inventory/curve model → latent location-transfer state model with inventory conservation.
+**Evaluation:** MAE, curve sign accuracy, net spread P&L, capacity. **Go/no-go:** ≥10% MAE reduction; positive net spread benefit after storage/roll/fees before trading gate. **Negative tests:** T+3 lag versus T+1 contamination; transfers double counted; contract roll.
+**Sources:** [LME off-warrant stocks announcement, 17 March 2025](https://www.lme.com/en/News/Press-releases/2025/LME-provides-daily-insight-into-off-warrant-stocks). Licensed: licensed warehouse/price history and executable futures bid/ask. Permissioned: approved risk and position capacity.
+**Illustrative 24-month scenario (USD thousands; not empirical ROI):** assumed total build/data/maintenance cost C=$150k; annual steady-state net operating benefit before project cost B=$90k; launch lag 7 months, no benefit during lag. Capacity assumption: $60m risk sleeve × 15 bps annual net scenario=$90k/year; limit to liquid contract depth. Benefit over 24 months = B×(24−lag)/12=$127.5k; ROI=(benefit−C)/C=-15.0%. Half/base/1.5× benefit sensitivity -57.5%/-15.0%/+27.5%; zero benefit −100%; break-even annual benefit $105.9k. No actual adoption, market capacity, realized P&L or cash savings established; validate opportunity overlap and costs before business case.
+**Publication potential:** Physical inventory observability and futures scarcity. **Novelty:** Unlike COT concentration or oil/wheat spreads: location-aware off-warrant metal stock and publication tiers. **Tools proposed:** statsmodels,polars,numpy.
+
+## Project navigation
+[SPEC](SPEC.md) · [PLAN](PLAN.md) · [TASKS](TASKS.md) · [ROADMAP](ROADMAP.md) · [HANDOFF](HANDOFF.md) · [SOURCES](SOURCES.md) · [AGENT](AGENT.md) · [SKILL](SKILL.md) · [PROMPT](PROMPT.md) · [TOOLING](TOOLING.md) · [WORKFLOW](WORKFLOW.md) · [RUNTIME](RUNTIME.md) · [EVALS](EVALS.md).
